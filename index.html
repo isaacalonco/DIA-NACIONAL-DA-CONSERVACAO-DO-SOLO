@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Nacional da Conservação do Solo | UCB</title>
+    <meta name="description" content="Projeto Acadêmico UCB: Dia Nacional da Conservação do Solo. Entenda a importância do 15 de Abril.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="index.html" class="logo">VidaSolo</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre a Data</a></li>
+                <li><a href="dicas.html">Ações Práticas</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="container text-center">
+                <h1 class="hero-title">Conservação do <span>Solo</span></h1>
+                <p class="hero-subtitle">15 de Abril é o Dia Nacional da Conservação do Solo. Descubra por que este recurso é vital para o nosso futuro e como podemos protegê-lo.</p>
+                <div class="hero-buttons">
+                    <a href="sobre.html" class="btn-primary">Por que Conservar?</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section class="section">
+            <div class="container grids">
+                <div class="about-text scroll-fade">
+                    <h2>Nossa riqueza invisível.</h2>
+                    <p>O solo é um organismo vivo. Muitas vezes esquecido sob nossos pés, ele é a base de todo o ecossistema terrestre.</p>
+                    <p>A erosão, o desmatamento e o uso inadequado de agrotóxicos ameaçam este recurso não renovável em escala humana. Sem a conservação do solo, colocamos em risco a segurança alimentar global e a saúde hídrica.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="card scroll-fade delay-1">
+                        <div class="icon">🔍</div>
+                        <h3>Recurso Finito</h3>
+                        <p>Leva-se até 1.000 anos para se formar apenas 1 centímetro de solo arável na natureza!</p>
+                    </div>
+                    <div class="card scroll-fade delay-2">
+                        <div class="icon">🇧🇷</div>
+                        <h3>O Cenário no Brasil</h3>
+                        <p>O Brasil é uma potência agrícola mundial, tornando a conservação do nosso solo não apenas uma missão ambiental, mas econômica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-content scroll-fade text-center">
+                    <h2>Ação pela Preservação</h2>
+                    <p>O primeiro passo para conservar é entender. Navegue pelo site e veja pequenas e grandes ações que fazem a diferença.</p>
+                    <br>
+                    <a href="dicas.html" class="btn-primary">Ver Ações e Dicas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>VidaSolo</h3>
+                    <p>Trabalho Acadêmico<br>Universidade Católica de Brasília (UCB)</p>
+                    
+                    <div class="footer-school">
+                        <h4>Integrantes da Equipe (AT2):</h4>
+                        <ul>
+                            <li>- [Escreva o Nome do Integrante 1]</li>
+                            <li>- [Escreva o Nome do Integrante 2]</li>
+                            <li>- [Escreva o Nome do Integrante 3]</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Rápido</h4>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="sobre.html">Sobre a Data</a></li>
+                        <li><a href="dicas.html">Ações Práticas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dia Nacional da Conservação do Solo - UCB.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-fade').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
