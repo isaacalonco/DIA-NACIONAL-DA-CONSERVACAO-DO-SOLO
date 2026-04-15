@@ -31,6 +31,12 @@ body {
     min-height: 100vh;
 }
 
+.logo-navbar {
+    width: 40px; 
+    height: auto;
+    object-fit: contain;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-dark);
@@ -180,7 +186,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 15%;
+    padding: 1.5rem 10%;
     background: var(--primary-dark);
 }
 
@@ -220,6 +226,13 @@ p {
     font-weight: 800;
     letter-spacing: 1px;
     color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
 }
 
 .nav-links {
